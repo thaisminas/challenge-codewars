@@ -1,7 +1,7 @@
 function warnTheSheep(queue) {
     let position = queue.reverse()
+    
     const index = position.findIndex(x => x === "wolf");
-    console.log(index)
 
     if(index == 0){
         return "Pls go away and stop eating my sheep"
