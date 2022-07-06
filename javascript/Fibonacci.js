@@ -7,10 +7,19 @@ function finabonacci(num){
     fibonacci[1] = 1;
 
     for (var i = 2; i <= num; i++) {
-        console.log(fibonacci[i - 2])
-      fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
+      if(fibonacci[i] <= 350){
+        fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
+      }
+
     }
-    console.log(fibonacci);
+    return fibonacci
+}
+
+
+
+function isFibonnaci(number){
+  let resul = finabonacci(number)
+  console.log(resul);
 }
 
 console.log(finabonacci(15))

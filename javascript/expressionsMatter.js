@@ -18,12 +18,6 @@ function expressionMatter(a, b, c) {
 
     const max = Math.max.apply(null, result)
 
-    // console.log(a * (b + c))
-    // console.log(a * b * c)
-    // console.log(a + b + c)
-    // console.log(a + b * c)
-    // console.log((a + b) * c)
-
     console.log(max)
 
 }
