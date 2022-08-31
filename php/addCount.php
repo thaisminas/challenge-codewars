@@ -1,17 +1,9 @@
 <?php
 
 function oddCount($n) {
-    $newArray = [];
-
-    for($i = 0; $i < $n; $i++){
-        if($i % 2 == 1){
-            array_push($newArray, $i);
-        }
-    }
-
-    return count($newArray);
+    return ($n -1)/2;
 }
 
 
-print_r(oddCount(7));
-print_r(oddCount(15));
+echo oddCount(7); // 9
+echo oddCount(15); // 7
